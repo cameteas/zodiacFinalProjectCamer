@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // add header comments here
-// Sept 2016
+// Sept, 2016
 
 namespace zodiacFinalProjectCamer
 {
