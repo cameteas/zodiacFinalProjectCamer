@@ -11,6 +11,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// add header comments here
+
 namespace zodiacFinalProjectCamer
 {
     public partial class Form1 : Form
