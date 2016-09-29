@@ -11,8 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// add header comments here
-// Sept, 2016
+//Cameron Teasdale, Sep. 29, 2016, An zodia description and visual progam
 
 namespace zodiacFinalProjectCamer
 {
@@ -21,14 +20,11 @@ namespace zodiacFinalProjectCamer
         public Form1()
         {
             InitializeComponent();
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             BackColor = Color.Black;
-
         }
-
         private void Form1_Click(object sender, EventArgs e)
         {
             //disposing title components
@@ -36,8 +32,7 @@ namespace zodiacFinalProjectCamer
             prompt.Dispose();
             ram.Dispose();
 
-
-            //declaring variables and creating objects
+            //declaring variables and creating things
             int txthtplc = 10;
             int[] strx = new int[4] { 60, 300, 385, 400 };
             int[] stry = new int[4] { 190, 240, 285, 320 };
@@ -61,10 +56,13 @@ namespace zodiacFinalProjectCamer
             int xVal = 0;
             int yVal = 0;
 
+            //logo display with sound
             fog.Play();
             Print.DrawString("a Central Skywalk Program", logoFont, logoBrush, 40, 80);
             Thread.Sleep(4000);
             Print.Clear(Color.Black);
+
+            //generate and print random stars
             cycle.Play();
             Thread.Sleep(500);
             for (int s = 0; s < 100; s++)
@@ -74,13 +72,15 @@ namespace zodiacFinalProjectCamer
                 Print.DrawEllipse(notCoolStarPen, xVal, yVal, 5, 5);
                 Thread.Sleep(25);
             }
+            
+            //aries star placement
             boom.Play();
-            //proper star placement
             for (int i = 0; i < 4; i++)
             {
                 Print.DrawEllipse(starPen, strx[i], stry[i], 5, 5);
                 Thread.Sleep(1000);
             }
+
             //text printing
             boop.Play();
             for (int i = 0; i < 5; i++)
@@ -89,7 +89,8 @@ namespace zodiacFinalProjectCamer
                 txthtplc = txthtplc + 15;
                 Thread.Sleep(1500);
             }
-            //line drawing
+
+            //line drawing between stars
             for (int i = 0; i < 3; i++)
             {
                 lazer.Play();

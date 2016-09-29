@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.title = new System.Windows.Forms.Label();
             this.prompt = new System.Windows.Forms.Label();
             this.ram = new System.Windows.Forms.PictureBox();
@@ -52,9 +53,9 @@
             this.prompt.ForeColor = System.Drawing.Color.Yellow;
             this.prompt.Location = new System.Drawing.Point(185, 412);
             this.prompt.Name = "prompt";
-            this.prompt.Size = new System.Drawing.Size(290, 40);
+            this.prompt.Size = new System.Drawing.Size(412, 40);
             this.prompt.TabIndex = 1;
-            this.prompt.Text = "Click to learn more";
+            this.prompt.Text = "Made By Cameron Teasdale";
             this.prompt.UseMnemonic = false;
             // 
             // ram
@@ -75,8 +76,9 @@
             this.Controls.Add(this.ram);
             this.Controls.Add(this.prompt);
             this.Controls.Add(this.title);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "zzz";
+            this.Text = "Aries by Cameron Teasdale";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ram)).EndInit();
